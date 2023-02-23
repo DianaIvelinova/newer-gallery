@@ -14,7 +14,7 @@ function UploadAlbum() {
   const name = useRef();
   const desc = useRef();
   const { token } = useUser();
-  const action = "create album";
+  const action = "createAlbum";
   const uploadPhotoRef = useRef();
   const photosPreviewRef = useRef();
   const { photos, numActiveUploads } = useUploadedPhoto(uploadPhotoRef,photosPreviewRef);

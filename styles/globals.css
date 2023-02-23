@@ -161,3 +161,125 @@ a {
   border-radius: 10px; 
   box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.387);
 }
+
+img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.gallery {
+  display: flex;
+  gap: 5px;
+}
+
+.galleryColumn {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  gap: 5px;
+  position: relative;
+}
+
+.photoPreview {
+  position: relative;
+  overflow: hidden;
+}
+
+.photoPreview .img {
+	transition: .3s;
+}
+
+.photoPreview:hover .img {
+  transform: scale(1.1);
+}
+
+.photoPreview:hover:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.actions {
+  display: none;
+}
+
+
+.photoPreview:hover .actions {
+  display: block;
+} 
+
+.actions .iconGlass {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  margin: 10px 0 0 10px;
+  border-radius: 25px;
+  border: 0px solid white;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+}
+
+.actions .iconTrash {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  right: 0;
+  margin: 10px 10px 0 0;
+  border-radius: 25px;
+  border: 0px solid white;
+  border-width: 1px;
+  background-color: rgba(0, 0, 0, 0);
+  padding: 5px;
+  }
+
+.lightbox-content img { 
+  width: 90%; 
+  height: 90%;
+  position: fixed;
+  top: 50%; 
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+}
+
+span {
+  margin-right: 2px;
+}
+
+.lightboxBtn {
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  background-color: #00000091;
+  color: #fafafa;
+  height: 30px;
+  z-index: 1000;
+  font-family: none;
+  font-size: 30px;
+}
+
+.lightbox , .layer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000091;
+  z-index: 10000;
+}
+
+.lightboxImg {
+  height: 100%;
+  width: 100%;
+}

@@ -28,6 +28,7 @@ export default async function handler(req, res) {
     }
   );
   const jsonUploadImg = await uploadImg.json();
+
   return res.status(200).json({ url: jsonUploadImg?.result?.uploadURL });
 }
 

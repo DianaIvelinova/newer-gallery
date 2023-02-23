@@ -84,7 +84,7 @@ const Albums = () => {
                       </Row>
                       <Row>
                         <small className="col">
-                          <Image alt=""нпм
+                          <Image alt=""
                             src="/images.svg"
                             width={20}
                             height={20}
@@ -125,7 +125,7 @@ const Albums = () => {
                       </Row>
                       <Row>
                         <small className="col">
-                          <Image alt=""нпм
+                          <Image alt=""
                             src="/images.svg"
                             width={20}
                             height={20}
